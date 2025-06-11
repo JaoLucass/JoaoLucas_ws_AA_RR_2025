@@ -26,7 +26,7 @@ foreach ($n in $tamanhos) {
     
     for ($i = 1; $i -le $repeticoes; $i++) {
         $output = .\algoritmo.exe $n
-        $tempoTotal += [double]$output
+        $tempo = [double]$output
         Write-Host "  Execução $i`: $output ms"
     }
     
