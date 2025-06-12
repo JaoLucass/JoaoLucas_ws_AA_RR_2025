@@ -1,10 +1,6 @@
 # Executáveis
 algoritmo.exe
 
-# Resultados de testes
-resultados/
-relatorios/
-
 # Arquivos temporários
 *.o
 __pycache__/

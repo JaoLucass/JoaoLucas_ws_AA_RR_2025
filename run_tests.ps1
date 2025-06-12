@@ -1,5 +1,5 @@
 # Configurações
-$tamanhos = 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1200, 1500
+$tamanhos = 100, 200, 300, 400, 500
 $repeticoes = 5
 $resultadosDir = "resultados"
 $relatoriosDir = "relatorios"
@@ -27,6 +27,7 @@ foreach ($n in $tamanhos) {
     for ($i = 1; $i -le $repeticoes; $i++) {
         $output = .\algoritmo.exe $n
         $tempo = [double]$output
+        $tempoTotal += $tempo   # <-- Adicione esta linha
         Write-Host "  Execução $i`: $output ms"
     }
     
