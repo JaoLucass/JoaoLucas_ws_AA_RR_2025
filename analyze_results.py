@@ -12,7 +12,6 @@ grafico_path = os.path.join(relatorios_dir, 'desempenho.png')
 
 # Processar dados
 df = pd.read_csv(csv_path)
-df['n³'] = df['n']**3
 df['log(tempo)'] = np.log(df['tempo_medio_ms'])
 
 # Calcular regressão linear para verificar complexidade
@@ -20,21 +19,13 @@ coef = np.polyfit(np.log(df['n']), np.log(df['tempo_medio_ms']), 1)
 expoente = coef[0]
 
 # Criar gráfico
-plt.figure(figsize=(12, 6))
+plt.figure(figsize=(10, 6))
 
 # Gráfico 1: Tempo vs n
 plt.subplot(1, 2, 1)
 plt.plot(df['n'], df['tempo_medio_ms'], 'bo-')
 plt.title('Tempo de Execução vs Tamanho da Entrada')
 plt.xlabel('n')
-plt.ylabel('Tempo (ms)')
-plt.grid(True)
-
-# Gráfico 2: Tempo vs n³ (para verificar proporcionalidade)
-plt.subplot(1, 2, 2)
-plt.plot(df['n³'], df['tempo_medio_ms'], 'ro-')
-plt.title('Tempo de Execução vs n³')
-plt.xlabel('n³')
 plt.ylabel('Tempo (ms)')
 plt.grid(True)
 

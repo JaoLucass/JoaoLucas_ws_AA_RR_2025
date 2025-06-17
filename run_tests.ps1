@@ -1,5 +1,5 @@
 # Configurações
-$tamanhos = 100, 200, 300, 400, 500
+$tamanhos = 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1500
 $repeticoes = 5
 $resultadosDir = "resultados"
 $relatoriosDir = "relatorios"

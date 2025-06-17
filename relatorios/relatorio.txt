@@ -1,18 +1,23 @@
 Relatório de Desempenho - Algoritmo FazAlgo
 ===========================================
 
-Testes realizados: 5 tamanhos diferentes
+Testes realizados: 10 tamanhos diferentes
 Repetições por teste: 5
-Expoente calculado: 3.0096 (esperado ~3 para O(n³))
+Expoente calculado: 2.9933 (esperado ~3 para O(n³))
 
 Resultados Detalhados:
 n	Tempo Médio (ms)
 -------------------
-100.0	893.739
-200.0	6953.947
-300.0	24275.829
-400.0	57625.855
-500.0	112420.691
+100.0	893.466
+200.0	7053.770
+300.0	23981.970
+400.0	56846.744
+500.0	111076.265
+600.0	200629.376
+700.0	299551.499
+800.0	447015.870
+900.0	637075.610
+1000.0	872682.419
 
 Conclusão:
 O algoritmo demonstra comportamento O(n³) como esperado.
